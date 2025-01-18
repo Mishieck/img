@@ -1,9 +1,9 @@
 #!/bin/bash
 
 filenamePattern='(.+)\.[a-zA-Z]+$'
-filenames=$1 # Glob
-options=$2
-outputExtension=$3
+filenames=$1
+outputExtension=$2
+options=$3
 
 for filename in $filenames; do
   if [[ $filename =~ $filenamePattern ]]; then
