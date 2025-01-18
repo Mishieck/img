@@ -15,7 +15,7 @@ where:
   put in quotes. This should be done even if you're using a glob.
 - `$outputFormat` is the format of the processed files like `png`, `jpeg`, 
   `webp` etc.
-- `ffmpegOptions` is the options you would normally pass as arguments to FFmpeg
+- `$ffmpegOptions` is the options you would normally pass as arguments to FFmpeg
 
 ## Examples
 
