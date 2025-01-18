@@ -1,6 +1,6 @@
 # img
 
-A bash script for precesing multiple images at a time using FFmpeg.
+A bash script for precesing multiple images at once using FFmpeg.
 
 ## Usage
 
