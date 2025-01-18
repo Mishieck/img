@@ -1,9 +1,9 @@
 #!/bin/bash
 
 filenamePattern='(.+)\.[a-zA-Z]+$'
-filenames=$1
-outputExtension=$2
-options=$3
+filenames=$1 # NOTE: Quoted glob
+outputExtension=$2 # PNG, JPEG, WEBP, etc
+options=$3 # ffmpeg options
 
 for filename in $filenames; do
   if [[ $filename =~ $filenamePattern ]]; then
