@@ -4,29 +4,39 @@ A bash script for precesing multiple images at once using FFmpeg.
 
 ## Usage
 
+You can run the script directly or use an alias. In this documentation, it is
+assumed that you are using an alias.
+
+### Alias
+
+```
+alias img="path-to-img.bash"
+```
+
+### Running Commands
+
 ```sh
-path-to-img.sh 'file-list' $outputFormat $ffmpegOptions
+img FILE_LIST OUTPUT_FORMAT [FFMPEG_OPTIONS]
 ```
 
 where:
 
-- `path-to-img.sh` is the path to the script
-- `file-list` is the list of files to be processed. Make sure that the list is
+- `FILE_LIST` is the list of files to be processed. Make sure that the list is
   put in quotes. This should be done even if you're using a glob.
-- `$outputFormat` is the format of the processed files like `png`, `jpeg`, 
+- `OUTPUT_FORMAT` is the format of the processed files like `png`, `jpeg`, 
   `webp` etc.
-- `$ffmpegOptions` is the options you would normally pass as arguments to FFmpeg
+- `FFMPEG_OPTIONS` are the options you would normally pass as arguments to FFmpeg
 
 ## Examples
 
 ### Without Options
 
 ```sh
-./img.sh './images/*.png' webp
+img './images/*.png' webp
 ```
 
 ### With Options
 
 ```sh
-./img.sh './images/*.png' webp '-compression_level 60'
+img './images/*.png' webp '-compression_level 60'
 ```
