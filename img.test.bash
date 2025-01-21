@@ -19,7 +19,7 @@ count-images() {
 }
 
 remove-output-images
-./img.sh "$inputImages" webp
+./img.bash "$inputImages" webp
 
 count-images "$inputImages"
 inputImageCount=$imageCount
