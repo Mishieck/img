@@ -9,13 +9,13 @@ assumed that you are using an alias.
 
 ### Alias
 
-```
+```bash
 alias img="path-to-img.bash"
 ```
 
 ### Running Commands
 
-```sh
+```bash
 img FILE_LIST OUTPUT_FORMAT [FFMPEG_OPTIONS]
 ```
 
@@ -31,12 +31,12 @@ where:
 
 ### Without Options
 
-```sh
+```bash
 img './images/*.png' webp
 ```
 
 ### With Options
 
-```sh
+```bash
 img './images/*.png' webp '-compression_level 60'
 ```
