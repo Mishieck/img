@@ -1,7 +1,7 @@
 #!/bin/bash
 
 filenamePattern='(.+)\.[a-zA-Z]+$'
-filenames=$1 # NOTE: Quoted list
+filenames="$1" # NOTE: Quoted list
 outputExtension=$2 # PNG, JPEG, WEBP, etc
 options=$3 # ffmpeg options
 
